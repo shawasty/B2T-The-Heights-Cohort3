@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<!--adding style to texts -->
+		<style type="text/css">
+			h1{
+				font-weight: bold;
+				color: brown;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Asking users for their choices of words by giving an id-->
+		<h1 id="pig"></h1>
+
+		<!-- introducing Java Script Element -->
+		<script type="text/javascript">
+
+			// defining a variable for question to ask users through a prompt.
+			var word = prompt("please enter a word");
+
+			//displaying on webpage plus taking the first letter of te word provided off and adding 'Ay' to the word given.
+			
+			document.getElementById("pig").innerHTML = word.slice(1) + word.charAt(0)+ "ay";
+		</script>
+
+	</body>
+</html>
