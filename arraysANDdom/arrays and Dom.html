@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			
+			h1{
+				font-family: calibri;
+				font-size: 30px;
+				color: rgb(57, 36, 124);
+				text-align: center;
+
+			}
+
+		</style>
+		<title></title>
+	</head>
+	<body>
+
+		<!-- creating and giving an id to an empty HTML text element -->
+		<h1 id="more"></h1>
+
+		<!-- introducing a javascript element -->
+
+
+		<script type="text/javascript">
+
+			//defining a variable called fruits
+
+			var fruits =["apple", "orange" ,"kiwi"];
+
+			//introducing popup for users to add more fruits
+
+			var input = prompt("Add more fruits");
+
+			//adding items to the end of array
+
+			fruits.push(input.toLowerCase());
+
+			//sorting out elements.
+
+			fruits.sort();
+
+			//displaying elements separated by "with" on web page
+
+
+			document.getElementById('more').innerHTML = fruits.join(" with ")
+
+			
+
+
+		</script>
+
+
+	</body>
+</html>
