@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+	<style type="text/css">
+
+	p{
+		font-family: calibri;
+		font-size: 30px;
+		color: rgb(66, 134, 244);
+	}
+		
+
+	</style>
+	</head>
+	<body>
+		<p id="day"></p>
+
+		<script type="text/javascript">
+			
+			switch(new Date().getDay()){
+				case 0 :
+					document.getElementById("day").innerHTML= "Welcome to Sunday";
+					break;
+				case 1 :
+					document.getElementById("day").innerHTML= "Welcome to Monday"
+					break;
+				case 2 :
+					document.getElementById("day").innerHTML= "Welcome to Tuesday";
+					break;
+				case 3:
+					document.getElementById("day").innerHTML= "Welcome to Wednesday";
+					break;
+				case 4:
+					document.getElementById("day").innerHTML="Welcome to Thursday";
+					break;
+				case 5:
+					document.getElementById("day").innerHTML="Welcome to Friday";
+					break;
+				case 6:
+					document.getElementById("day").innerHTML="Welcome to Saturday";
+					break;
+
+					
+
+
+			}
+
+
+
+		</script>
+
+	</body>
+</html>
