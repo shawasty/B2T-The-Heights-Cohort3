@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			//describing variable grade 
+
+			var grade =[80,77,88,95,68];
+
+			// finding the average of the student
+
+			var average = eval(grade.join('+'))/grade.length;
+
+			// setting conditions
+
+			// if average is less than 60, then the console prints F
+
+			if (average < 60) {
+				console.log("your letter grade is F");
+
+			}
+
+			//// if average is equal to 60 and less than or equal to 70, then the console prints D
+
+			else if (average <= 60 && average <= 70){
+				console.log("your letter grade is D");
+			}
+
+			//  if average is greater than 70  or equal to 79, then the console prints C
+
+			else if (average>70 && average <= 79) {
+				console.log("your letter grade is C");
+			}
+
+			//  if average is greater than 79 and also less than or equal to 79, then the console prints B
+
+			else if (average > 79 && average <= 89) {
+				console.log("your letter grade is B");
+			}
+
+
+			//  if average is greater than 89 and  less than or equal to 100, then the console prints A
+			
+			else if (average > 89 && average <= 100) {
+				console.log("your letter grade is A");
+			}
+			
+
+
+
+		</script>
+
+	</body>
+</html>
