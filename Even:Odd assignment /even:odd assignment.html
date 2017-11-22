@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			
+			p{
+				font-style: italic;
+				font-size: 40px;
+				color: rgb(66, 134, 244);
+				text-align: center;
+				padding-top: 10px;
+
+			}
+		</style>
+	</head>
+	<body>
+
+		<p id="num"></p>
+
+		<script type="text/javascript">
+			//initilizing counter for the loop
+			var number = 0;
+
+			// defining the the end of the loop.
+
+			while (number <= 15){
+				//setting conditions for wether even or odd number.
+
+			if(number%2 == 0){
+				// displaying result in the console
+				console.log( number + " is even");
+
+				// displaying result on webpage
+				document.getElementById("num").innerHTML+= number + " is even <br/>";
+			}else{
+				console.log(number + " is odd");
+				document.getElementById("num").innerHTML+= number + " is odd <br/>";
+
+			}
+			// setting incrementation
+
+				number ++;
+			}
+		</script>
+
+	</body>
+</html>
