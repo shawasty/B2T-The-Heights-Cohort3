@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name Display</title>
+</head>
+<body>
+	<!-- giving the p element an id (display) to be used later to display content on webpage  -->
+	<p id ="display"></p>
+
+	<!-- creating a form with given first and lastnames -->
+	<form>
+		First Name: <input type="text" id="fname" value="Curtis"><br>
+		Last Name: <input type="text" id="lname" value="Jackson"><br>
+		<input type="button" value="Submit" onclick="getFormValue()"><br>
+	</form>
+	<script type="text/javascript">
+		//Defining variables for First and Last names
+
+		var firstName = "fname", lastName = "lname";
+
+		//creating a function
+		
+		function getFormValue(){
+			var fname = document.getElementById("fname").value;
+			var lname = document.getElementById("lname").value;
+
+			//Displaying content on webpage
+			document.getElementById("display").innerHTML ="Hello " + fname + " "+ lname;
+		}
+	</script>
+
+</body>
+</html>
